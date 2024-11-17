@@ -12,7 +12,13 @@ export default function Item(props) {
                 <span class="month">{props.item.date.toLocaleString('default', { month: 'short' })}</span>
             </div>
             <div class="todo-item-content">
-                <span class="data">{props.item.content}</span>
+                {/* Minimalna prepravka da bi se dobio željeni sadržaj */}
+                <div class="contact-item">
+                    <span class="text">Name:</span> {props.item.content.name}
+                </div>
+                <div class="contact-item">
+                    <span class="text">Phone Number:</span> {props.item.content.phoneNumber}
+                </div>
             </div>
             <span class="delete-btn" title="delete" onClick={(e) => {
                 e.stopPropagation();
