@@ -19,6 +19,8 @@
 
 
 .todo-item-content {
+    display       : flex;
+    flex-direction: column;
     flex-grow: 1;
     color    : #7b7b7b;
     padding  : 0 16px;
@@ -62,4 +64,12 @@
 
 .delete-btn:hover {
     background-image: url(../../assets/icon-delete.png);
+}
+
+.contact-item {
+    padding: 5px 0;
+}
+
+.text {
+    font-weight: bold;
 }
